@@ -16,7 +16,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class NetworkModule {
 
-
     @Provides
     @Singleton
     fun baseUrlModule() = Constant.BASE_URL
@@ -31,7 +30,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun retrofitModule(client:OkHttpClient,baseUrl:String) = Retrofit.Builder()
+    fun providerRetrofit(client:OkHttpClient,baseUrl:String) = Retrofit.Builder()
         .baseUrl(baseUrl)
         .client(client)
         .addConverterFactory(GsonConverterFactory.create())

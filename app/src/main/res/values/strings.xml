@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ForecastWeather</string>
+    <string name="wind_text">Wind</string>
+    <string name="humidity_text">Humidity</string>
+    <string name="pressure_text">AtmPressure</string>
+    <string name="Water_text">Water</string>
+    <string name="moonrise_text">Moonrise</string>
+    <string name="moonset_text">MoonSet</string>
 </resources>
